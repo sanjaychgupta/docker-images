@@ -40,6 +40,7 @@ To add an authorized ssh key, you have to add it to `/home/git/.ssh/authorized_k
   * With the help of below command copy it to your container.
 
           cat ~/.ssh/id_rsa.pub | ssh -p 8022 git@localhost "mkdir -p ~/.ssh && cat >>  ~/.ssh/authorized_keys"
+    **Note:-** Frst time password is required for git user and password=git and please change password for security reason.
 
 ### How to create repository on git server.
   * Using ` create-repository repo-name` command
